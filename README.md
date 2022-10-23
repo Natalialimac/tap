@@ -1,49 +1,20 @@
-# Getting Started with Create React App
+# Sistema de exibição de livros e notícias
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Apresentação:
 
-## Available Scripts
+O sistema desenvolvido é parte do processo avaliativo da disciplina Tópicos 
+Avançados em Programação da UCSAL.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Como funciona a aplicação
+O aplicativo web exibe livros e notícias. Na seção de livros, está implementado um
+filtro que permite a busca por autor. Na seção de notícias, o filtro permite busca
+por tipo (subsection).
 
 A aplicação web é desenvolvida utilizando a API de nyTimes: (https://developer.nytimes.com/apis)
 
 Consumimos dois endpoints, a de exibição de livros mais vendidos do NYT e a API de notícias principais. 
 
-Ambas as páginas, é possível fazer um filtro de busca, na de livros a busca é feita pelo nome do autor. Na de notícias por subsection
+## Rodando
 
+Após clonar o projeto, acesse o diretório da aplicação via linha de comando e digite
+`npm start`. Em seguida abra o navegador em http://localhost:3000 para visualizar 
+a aplicação web em modo de desenvolvimento.
