@@ -14,13 +14,13 @@ A aplicação web é desenvolvida utilizando a API de nyTimes: (https://develope
 
 Consumimos dois endpoints, a de exibição de livros mais vendidos do NYT e a API de notícias principais. 
 
-## Rodando
+## Rodando:
 
 Após clonar o projeto, acesse o diretório da aplicação via linha de comando e digite
 `npm start`. Em seguida abra o navegador em http://localhost:3000 para visualizar 
 a aplicação web em modo de desenvolvimento.
 
-## Imagens
+## Imagens:
 
 
 Home
