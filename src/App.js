@@ -1,7 +1,7 @@
-import Books from "./Books";
-import TopStories from "./TopStories";
+import Books from "./components/booksPage/Books";
+import TopStories from "./components/topStoriesPage/TopStories";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./components/homePage/Home"
 
 function App() {
   return (
