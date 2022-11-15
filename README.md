@@ -20,14 +20,8 @@ Após clonar o projeto, acesse o diretório da aplicação via linha de comando 
 `npm start`. Em seguida abra o navegador em http://localhost:3000 para visualizar 
 a aplicação web em modo de desenvolvimento.
 
-## Imagens:
+## Funcionamento
 
 
-Home
-![1](https://user-images.githubusercontent.com/56198643/197629950-7125e053-5153-456e-b40a-61a3eb5d674d.png)
+https://user-images.githubusercontent.com/48503532/202017333-51ad7743-d55f-4f7f-97ef-a6c6aeb4e93c.mp4
 
-Books
-![2](https://user-images.githubusercontent.com/56198643/197629967-e0c55d0c-3d05-4ea0-a0a3-239e4f3d7223.png)
-
-News
-![3](https://user-images.githubusercontent.com/56198643/197629987-8dc12f54-0af9-4424-b593-7c6056726aa3.png)
