@@ -3,28 +3,29 @@ import axios from "axios";
 import Home from "../homePage/Home";
 import './style.css';
 
-const Books = () => {
-  const [books, setBooks] = useState([]);
+const Movies = () => {
+  const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     const fetchStories = async () => {
       const res = await axios.get(
-        `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_API_KEY_BOOK}`
+        `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=${process.env.REACT_APP_API_KEY_MOVIES}`
       );
-      setBooks(res.data.results.books);
+      setMovies(res.data.results)
     };
 
     fetchStories();
   }, []);
 
-  const filterBooks = books.filter((book) =>
-    book.author.toLowerCase().includes(search.toLowerCase())
+  const filterMovies = movies.filter((movies) =>
+    movies.display_title
+    .toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <>
-      <Home text={"Procure aqui o nome do autor"} />
+      <Home text={"Procure aqui o nome do direitor "} />
 
       <input
         type="type"
@@ -33,34 +34,35 @@ const Books = () => {
       />
       
       <ul>
-        {filterBooks.map((books) => {
-          const { author,rank } = books;
+        {filterMovies.map((movies) => {
+          const { display_title
+            ,rank } = movies;
           return (
             <li key={rank}>
               <div class="text">
-                <p>{author}</p>
+                <p>{display_title}</p>
               </div>
             </li>
           );
         })}
       </ul> 
       
-      <h1>Livros</h1>
+      <h1>Filmes</h1>
 
       <ul>
-        {filterBooks.map((books) => {
-          const { author, book_image, description, rank, title } = books;
+        {filterMovies.map((movies) => {
+          const { display_title, multimedia,rank, opening_date, headline, link} = movies;
           return (
             <li key={rank}>
               <div class="book">
               <div>
-                <img src={book_image} alt={title} />
+                <img src={multimedia?.src} alt={headline} />
               </div>
 
               <div class="text">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <p>{author}</p>
+                <h3>{display_title}</h3>
+                <p>{opening_date}</p>
+                <a href={link.url}> Para mais informaçẽs </a>
               </div>
               </div>
             </li>
@@ -73,4 +75,4 @@ const Books = () => {
   );
 };
 
-export default Books;
+export default Movies;

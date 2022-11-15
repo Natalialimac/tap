@@ -23,13 +23,14 @@ const TopStories = () => {
 
   return (
     <div>
-      <Home />
+      <Home text={"Pesquise o ramo desejado"} />
       
       <input
         type="type"
         value={search}
         onChange={(ev) => setSearch(ev.target.value)}
       />
+      
 
       <h1>Notícias</h1>
 
