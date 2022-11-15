@@ -24,5 +24,10 @@ a aplicação web em modo de desenvolvimento.
 ## Funcionamento
 
 
-Uploading WhatsApp Video 2022-11-15 at 17.42.26.mp4…
+![Screenshot from 2022-11-15 17-41-47](https://user-images.githubusercontent.com/48503532/202021501-d1117dde-1ea8-4482-b3f7-5539e90a19f5.png)
+![Screenshot from 2022-11-15 17-42-12](https://user-images.githubusercontent.com/48503532/202021505-9dedce03-e62a-45cb-8ee0-51b42ca73dc0.png)
+![Screenshot from 2022-11-15 17-42-21](https://user-images.githubusercontent.com/48503532/202021508-f0e2a2e2-8cd6-4441-8732-4626fcf09d00.png)
+![Screenshot from 2022-11-15 17-42-29](https://user-images.githubusercontent.com/48503532/202021510-e84812c2-4525-4bf5-a577-c1933729bac2.png)
+
+
 
