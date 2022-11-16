@@ -16,12 +16,18 @@ Consumimos dois endpoints, a de exibição de livros mais vendidos do NYT e a AP
 
 ## Rodando:
 
+
+https://user-images.githubusercontent.com/56198643/202069963-c99fd5d5-6256-4c61-aab9-8592cbec2674.mp4
+
+
+
 Após clonar o projeto, acesse o diretório da aplicação via linha de comando e digite
 
 `npm start`. Em seguida abra o navegador em http://localhost:3000 para visualizar 
 a aplicação web em modo de desenvolvimento.
 
 ## Funcionamento
+
 
 
 ![Screenshot from 2022-11-15 17-41-47](https://user-images.githubusercontent.com/48503532/202021501-d1117dde-1ea8-4482-b3f7-5539e90a19f5.png)
